@@ -1,5 +1,5 @@
-# device.mk - Texet TM-5702 (k53_m9_32g)
 
+# device.mk - Texet TM-5702 (k53_m9_32g)
 LOCAL_PATH := device/texet/k53_m9_32g
 
 # fstab de TWRP

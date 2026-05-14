@@ -1,1 +1,1 @@
-COMMON_LUNCH_CHOICES
+# Vacío intencionalmente — AndroidProducts.mk maneja lunch choices

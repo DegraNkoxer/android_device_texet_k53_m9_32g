@@ -99,3 +99,8 @@ TW_NO_HAPTICS               := false
 BOARD_USES_MTK_HARDWARE     := true
 TW_NO_EXFAT_FUSE            := false
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
+
+# Display fix para MT6753
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+TW_SCREEN_BLANK_ON_BOOT      := true
+TW_NO_SCREEN_TIMEOUT         := true

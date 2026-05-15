@@ -98,3 +98,4 @@ TW_NO_HAPTICS               := false
 # ─── MTK específico ───────────────────────────────────────────
 BOARD_USES_MTK_HARDWARE     := true
 TW_NO_EXFAT_FUSE            := false
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab

@@ -50,6 +50,11 @@ jobs:
         git clone https://github.com/DegraNkoxer/android_device_texet_k53_m9_32g.git \
           ~/twrp/device/texet/k53_m9_32g --depth=1
 
+    - name: Fix Python 2 syntax in roomservice.py
+      run: |
+        sed -i 's/except IOError, ES.ParseError:/except (IOError, ES.ParseError):/' \
+          ~/twrp/vendor/omni/build/tools/roomservice.py
+
     - name: Build TWRP
       run: |
         cd ~/twrp

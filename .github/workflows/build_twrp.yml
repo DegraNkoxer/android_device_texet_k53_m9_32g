@@ -58,6 +58,8 @@ jobs:
     - name: Build TWRP
       run: |
         cd ~/twrp
+        export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+        export PATH=$JAVA_HOME/bin:$PATH
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         export LC_ALL=C

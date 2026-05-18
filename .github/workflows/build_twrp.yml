@@ -57,6 +57,7 @@ jobs:
 
     - name: Build TWRP
       run: |
+        sudo update-java-alternatives --set java-1.8.0-openjdk-amd64
         cd ~/twrp
         export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
         export PATH=$JAVA_HOME/bin:$PATH

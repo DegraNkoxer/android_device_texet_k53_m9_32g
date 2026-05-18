@@ -57,10 +57,11 @@ jobs:
 
     - name: Build TWRP
       run: |
-        sudo update-java-alternatives --set java-1.8.0-openjdk-amd64
-        cd ~/twrp
-        export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+        sudo apt-get install -y openjdk-8-jdk
+        export JAVA_HOME=$(find /usr/lib/jvm -maxdepth 1 -name "java-8*" | head -1)
         export PATH=$JAVA_HOME/bin:$PATH
+        java -version
+        cd ~/twrp
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         export LC_ALL=C

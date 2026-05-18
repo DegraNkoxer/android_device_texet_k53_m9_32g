@@ -24,7 +24,8 @@ jobs:
         sudo apt-get install -y git gnupg flex bison gperf build-essential \
           zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
           lib32ncurses-dev libxml2-utils xsltproc unzip python3 \
-          python-is-python3 openjdk-11-jdk bc libssl-dev schedtool rsync lzop
+          python-is-python3 bc libssl-dev schedtool rsync lzop \
+          libncurses5 libncurses5-dev
 
     - name: Setup repo tool
       run: |
